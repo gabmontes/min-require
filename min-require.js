@@ -19,6 +19,8 @@
     funcs[id] = callback;
   }
 
+  define.cjs = true;
+
   function stubRequire(stub) {
     return function (id) {
         if (!stub.hasOwnProperty(id)) {
